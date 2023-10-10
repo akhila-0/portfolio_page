@@ -1,0 +1,57 @@
+html{
+    scroll-behavior: smooth;
+    background-color: black;
+}
+body {
+    color:pink;
+}
+#sample img {
+    border-radius: 20px;
+    border: 7px double orangered;
+    box-shadow: 5px 5px 5px green;
+}
+#sample img:hover {
+    transform: rotate(-5deg);
+
+}
+.wrapper{
+    display:flex;
+    justify-content: center;
+}
+#header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.container{
+    display:grid;
+    grid-template-rows: 15vh 55vh 1fr 0.5fr 35vh;
+    grid-template-columns: repeat(4,1fr);
+    gap:3%;
+    grid-template-areas: "img head head head"
+    "obj obj profile profile"
+    " project project pro pro"
+    "work work co co"
+    "con con con con";
+    width: 70vw;
+    padding: 20px;
+}
+    #footer{
+        grid-area: foot;
+        text-align: center;
+    }
+    #code{
+        grid-area: co;
+    }
+    #sample{
+        grid-area: project;
+        text-align: center;
+    }
+    #image{
+        grid-area: img;
+        text-align: center;
+        box-shadow: 5px 5px 5px rgb(3,, blue);
+    }
+
+
+
